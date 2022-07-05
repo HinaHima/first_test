@@ -13,7 +13,7 @@ class TheTop(models.Model):
     """Конкретные топы."""
     top = models.ForeignKey(Top, on_delete=models.CASCADE)
     text = models.TextField(max_length=200)
-    video = EmbedVideoField()
+    url = EmbedVideoField()
 
     def __str__(self):
         return self.text

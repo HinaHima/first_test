@@ -8,5 +8,6 @@ app_name = 'top_moments'
 urlpatterns = [
     #Домашняя страница
     path('', views.index, name='index'),
-    #path('tops/', views.tops, name='top'),
+    path('tops/', views.top, name='tops'),
+    path('tops/moments/', views.moment, name='moments'),
 ]

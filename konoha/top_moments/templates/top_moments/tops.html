@@ -1,0 +1,16 @@
+{% extends 'top_moments/base.html' %}
+
+{% block content %}
+<body>
+    <p>Tops</p>
+
+<ul>
+    {% for top in tops %}
+        <li>{{ top }}</li>
+    {% empty %}
+        <li>There are no tops yet.</li>
+    {% endfor %}
+</ul>
+
+</body>
+{% endblock content %}

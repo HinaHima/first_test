@@ -5,9 +5,15 @@
     <title>Index</title>
 </head>
 
+<body>
+
 <p>
-  <a href="{% url 'top_moments:index' %}">Konoha</a>
+  <a href="{% url 'top_moments:index' %}">Konoha</a> -
+  <a href="{% url 'top_moments:tops' %}">Tops</a> -
+  <a href="{% url 'top_moments:moments' %}">Top moments</a> -
 </p>
+
+</body>
 
 {% block content %}{% endblock content %}
 
