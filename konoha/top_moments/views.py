@@ -17,3 +17,10 @@ def moment(request):
     moments = top.thetop_set.all()
     context = {'top': top, 'moments': moments}
     return render(request, 'top_moments/moments.html', context)
+
+def kunoichi(request):
+    """Страница с лучшими куноичи."""
+    top = Top.objects.get(id=2)
+    moments = top.thetop_set.all()
+    context = {'top': top, 'moments': moments}
+    return render(request, 'top_moments/moments.html', context)

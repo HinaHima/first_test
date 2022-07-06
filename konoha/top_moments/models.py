@@ -11,9 +11,11 @@ class Top(models.Model):
 
 class TheTop(models.Model):
     """Конкретные топы."""
-    top = models.ForeignKey(Top, on_delete=models.CASCADE)
-    text = models.TextField(max_length=200)
-    url = EmbedVideoField()
+    top = models.ForeignKey(Top, on_delete=models.CASCADE, blank=True)
+    name = models.TextField(max_length=50, blank=True)
+    text = models.TextField(max_length=200, blank=True)
+    image = models.ImageField(upload_to='image/', blank=True)
+    url = EmbedVideoField(blank=True)
 
     def __str__(self):
-        return self.text
+            return self.name
