@@ -7,10 +7,10 @@
 <p> Here are the moments that I think are the best in the entire series.</p>
 
 <ol>
-    {% for moment in moments %}
+    {% for cont in content %}
         <li>
-            <p>{{ moment }}</p>
-            <p>{% video moment.url 'medium' %}</p>
+            <p>{{ cont }}</p>
+            <p>{% video cont.url 'medium' %}</p>
         </li>
     {% endfor %}
 </ol>

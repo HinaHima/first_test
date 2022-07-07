@@ -1,7 +1,6 @@
 """URl схемы для Top moments."""
 
 from django.urls import path
-
 from . import views
 
 app_name = 'top_moments'

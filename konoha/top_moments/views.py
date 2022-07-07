@@ -14,13 +14,13 @@ def top(request):
 def moment(request):
     """Страница с лучшими моментами."""
     top = Top.objects.get(id=1)
-    moments = top.thetop_set.all()
-    context = {'top': top, 'moments': moments}
+    content = top.thetop_set.all()
+    context = {'top': top, 'content': content}
     return render(request, 'top_moments/moments.html', context)
 
 def kunoichi(request):
     """Страница с лучшими куноичи."""
     top = Top.objects.get(id=2)
-    moments = top.thetop_set.all()
-    context = {'top': top, 'moments': moments}
-    return render(request, 'top_moments/moments.html', context)
+    content =  top.thetop_set.all()
+    context = {'top': top, 'content' : content}
+    return render(request, 'top_moments/kunoichi.html', context)
