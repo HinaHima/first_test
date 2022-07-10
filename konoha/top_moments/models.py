@@ -14,7 +14,7 @@ class TheTop(models.Model):
     top = models.ForeignKey(Top, on_delete=models.CASCADE, blank=True)
     name = models.TextField(max_length=50, blank=True)
     text = models.TextField(max_length=200, blank=True)
-    image = models.ImageField(upload_to='static/top_moments/images/', blank=True)
+    image = models.ImageField(upload_to='A:/Python_projects/konoha/konoha//top_moments/static/top_moments/images/', blank=True)
     url = EmbedVideoField(blank=True)
 
     def __str__(self):
