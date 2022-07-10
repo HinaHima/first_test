@@ -9,8 +9,7 @@
     {% for cont in content %}
         <li>
             <p>{{ cont }}</p>
-            {% load static %}
-            <img src="{% static '{{ cont.image }}}' %}" alt="Image" style="width:555px;height:540px;"/>
+            <img src="{{ cont.image.url}}" alt="Image" style="width:540px;height:540px;"/>
         </li>
     {% endfor %}
 </ol>

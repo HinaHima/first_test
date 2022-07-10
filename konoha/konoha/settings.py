@@ -120,13 +120,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
 #URL для управления медиафайлами.
 
 MEDIA_URL = 'media/'
 
 #Путь хранения медиа.
 
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 
 # Default primary key field type
