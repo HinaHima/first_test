@@ -3,17 +3,16 @@
 
 {% block content %}
 <body>
-<p>{{ top.topname }}</p>
-<p> Here are the moments that I think are the best in the entire series.</p>
+<h1><b><p align="center"> Here are the moments that I think are the best in the entire series.</p></b></h1>
 
-<ol>
+<dl>
     {% for cont in content %}
-        <li>
-            <p>{{ cont }}</p>
-            <p>{% video cont.url 'medium' %}</p>
-        </li>
+        <dt>
+            <p align="center">{{ cont }}</p>
+            <p align="center">{% video cont.url 'medium' %}</p>
+        </dt>
     {% endfor %}
-</ol>
+</dl>
 
 </body>
 {% endblock content %}

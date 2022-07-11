@@ -5,11 +5,8 @@
     <p>Tops</p>
 
 <ul>
-    {% for top in tops %}
-        <li>{{ top }}</li>
-    {% empty %}
-        <li>There are no tops yet.</li>
-    {% endfor %}
+    <li><a href="{% url 'top_moments:moments' %}">Top moments</a></li>
+    <li><a href="{% url 'top_moments:kunoichi' %}">Top kunoichi</a></li>
 </ul>
 
 </body>

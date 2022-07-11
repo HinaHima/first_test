@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,24 +9,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Konoha</title>
 
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
-<body>
+<body style="background-image: url('{% static 'images/eyes.jpg'%}');">
+
 <div class="container-fluid">
 
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-1">
       {% block sidebar %}
       <ul class="sidebar-nav">
-        <a href="{% url 'top_moments:index' %}">Konoha</a> -
-        <a href="{% url 'top_moments:tops' %}">Tops</a> -
-        <a href="{% url 'top_moments:moments' %}">Top moments</a> -
+      <p>  <a href="{% url 'top_moments:index' %}">Konoha</a>  </p>
+      <p>  <a href="{% url 'top_moments:tops' %}">Tops</a>  </p>
+      <p>  <a href="{% url 'top_moments:moments' %}">Top moments</a>  </p>
+      <p>  <a href="{% url 'top_moments:kunoichi' %}">Top kunoichi</a>  </p>
       </ul>
       {% endblock %}
       </div>
-      <div class="col-sm-10 ">
+      <div class="col-md-10 ">
       {% block content %}{% endblock %}
       </div>
     </div>
