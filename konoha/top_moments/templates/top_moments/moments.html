@@ -3,8 +3,11 @@
 
 {% block content %}
 <body>
+<div class="hh">
 <h1><b><p align="center"> Here are the moments that I think are the best in the entire series.</p></b></h1>
+</div>
 
+<div class="no-ie">
 <dl>
     {% for cont in content %}
         <dt>
@@ -13,6 +16,7 @@
         </dt>
     {% endfor %}
 </dl>
+</div>
 
 </body>
 {% endblock content %}

@@ -8,22 +8,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Konoha</title>
-
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'top_moments/css/styles.css' %}">
 </head>
 
-<body style="background-image: url('{% static 'images/eyes.jpg'%}');">
+<body style="background-image: url('{% static 'top_moments/images/bg1.jpg'%}');">
 
 <div class="container-fluid">
-
     <div class="row">
       <div class="col-sm-1">
       {% block sidebar %}
       <ul class="sidebar-nav">
-      <p>  <a href="{% url 'top_moments:index' %}">Konoha</a>  </p>
-      <p>  <a href="{% url 'top_moments:tops' %}">Tops</a>  </p>
-      <p>  <a href="{% url 'top_moments:moments' %}">Top moments</a>  </p>
-      <p>  <a href="{% url 'top_moments:kunoichi' %}">Top kunoichi</a>  </p>
+      <p><a href="{% url 'top_moments:index' %}"><font color="#FF4500"> <h5>Konoha</h5> </font></a>  </p>
+      <p><a href="{% url 'top_moments:tops' %}"><font color="#FF4500"> <h5>Tops</h5> </font></a>  </p>
+      <p><a href="{% url 'top_moments:moments' %}"><font color="#FF4500"> <h5>Top moments</h5> </font></a>  </p>
+      <p><a href="{% url 'top_moments:kunoichi' %}"><font color="#FF4500"> <h5>Top kunoichi</h5> </font></a></p>
       </ul>
       {% endblock %}
       </div>
@@ -33,7 +31,6 @@
     </div>
 
 </div>
-
 </body>
 
 </html>
