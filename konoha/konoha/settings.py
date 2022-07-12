@@ -123,7 +123,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "/top_moments/static/"),
+    os.path.join(BASE_DIR, "A:/Python_projects/konoha/konoha/top_moments/static/"),
 ]
 
 #URL для управления медиафайлами.

@@ -2,8 +2,9 @@
 
 {% block content %}
 <body>
-<p>{{ top.topname }}</p>
-<p> Here are the moments that I think are the best in the entire series.</p>
+<div class="no-ie">
+<p align="center">{{ top.topname }}</p>
+<p align="center"> The cutest chicks ever.</p>
 
 <dl>
     {% for cont in content %}
@@ -15,6 +16,8 @@
         </dt>
     {% endfor %}
 </dl>
+</div>
+
 
 </body>
 {% endblock content %}

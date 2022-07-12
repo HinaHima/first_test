@@ -1,13 +1,16 @@
 {% extends 'top_moments/base.html' %}
 
 {% block content %}
-<body>
-    <p>Tops</p>
+<body align="center">
+<div class="hh">
+    <p><h2><b>Tops</b></h2></p>
 
-<ul>
-    <li><a href="{% url 'top_moments:moments' %}">Top moments</a></li>
-    <li><a href="{% url 'top_moments:kunoichi' %}">Top kunoichi</a></li>
-</ul>
 
+<dl>
+    <div class="no-ie">
+    <dt><a href="{% url 'top_moments:moments' %}">Top moments</a></dt>
+    <dt><a href="{% url 'top_moments:kunoichi' %}">Top kunoichi</a></dt>
+    </div>
+</dl>
 </body>
 {% endblock content %}
