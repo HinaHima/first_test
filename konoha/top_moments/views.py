@@ -24,3 +24,11 @@ def kunoichi(request):
     content =  top.thetop_set.all()
     context = {'top': top, 'content' : content}
     return render(request, 'top_moments/kunoichi.html', context)
+
+def quotes(request):
+    """Страница с лучшими куноичи."""
+    top = Top.objects.get(id=4)
+    content =  top.thetop_set.all()
+    context = {'top': top, 'content' : content}
+    return render(request, 'top_moments/quotes.html', context)
+

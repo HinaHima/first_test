@@ -1,0 +1,19 @@
+{% extends 'top_moments/base.html' %}
+
+{% block content %}
+<body>
+<div class="no-ie">
+<p align="center">{{ top.topname }}</p>
+
+    {% for cont in content %}
+        <dt>
+            <p align="center">{{ cont }}</p>
+            <p align="center"><img src="{{ cont.image.url}}"
+                 alt="Image"
+                 style="width:540px;height:540px;"/></p>
+            <p align="right">{{ cont.text }}</p>
+        </dt>
+    {% endfor %}
+</div>
+</body>
+{% endblock content %}
